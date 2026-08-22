@@ -1,0 +1,40 @@
+{
+  "name": "lyka-one-backend",
+  "version": "1.0.0",
+  "description": "Lyka One — Party Line: Real-time authorization backend for a real-estate CRM",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed/seed.js",
+    "test": "node src/tests/matrix.test.js",
+    "test:logic": "node src/tests/logic.test.js",
+    "test:integration": "node src/tests/integration.test.js"
+  },
+  "keywords": [
+    "lyka",
+    "crm",
+    "realtime",
+    "socket.io",
+    "authorization"
+  ],
+  "author": "Sugumar Jagadeesh",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.0.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^8.0.0",
+    "socket.io": "^4.7.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "node-fetch": "^2.7.0",
+    "nodemon": "^3.0.0",
+    "socket.io-client": "^4.8.3"
+  }
+}
